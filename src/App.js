@@ -162,9 +162,10 @@ function App() {
           className="app__headerImage"
           src="https://www.instagram.com/static/images/web/mobile_nav_type_logo.png/735145cfe0a4.png"
         />
-        {user ? (
-          <Avatar className="user__avatar" alt="YeminiCoder" src="" />
-          <Button onClick={() => auth.signOut()}> logout </Button>
+        {user ? (        
+          <div className="app__loginContainer">  
+             <Button onClick={() => auth.signOut()}> logout </Button>
+          </div>
         ) : (
           <div className="app__loginContainer">
             <Button onClick={() => setOpenSignIn(true)}> Sign In </Button>

@@ -7,9 +7,40 @@
     height: 100vh;
 }
 
-.app__headerImage {
+.app__h3 {
+    display: flex;
+     justify-content: center;
+}
+
+.app__headerImage{
+    object-fit: contain;
+}
+.app__header {
+     position: sticky;
+     top:0;
+     z-index:1;
     background-color: white;
     object-fit: contain;
     padding: 20px;
     border: 1px solid lightgray;
+    display:flex;
+    justify-content: space-between;
+   
+
+}
+
+.app__signup {
+    display: flex;
+    flex-direction: column;
+}
+
+.app__posts{
+    padding: 20px;
+    display:flex;
+    justify-content: center;
+}
+
+
+.app__postsRight{
+ margin-left: 10px;
 }

@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Modal from "@material-ui/core/Modal";
 import { makeStyles } from "@material-ui/core/styles";
-import { Button, Input } from "@material-ui/core";
+import { Button, Input, Avatar } from "@material-ui/core";
 import ImageUpload from "./ImageUpload";
 import "./App.css";
 import Post from "./Post";
@@ -163,6 +163,7 @@ function App() {
           src="https://www.instagram.com/static/images/web/mobile_nav_type_logo.png/735145cfe0a4.png"
         />
         {user ? (
+          <Avatar className="user__avatar" alt="YeminiCoder" src="" />
           <Button onClick={() => auth.signOut()}> logout </Button>
         ) : (
           <div className="app__loginContainer">
@@ -171,7 +172,7 @@ function App() {
           </div>
         )}
       </div>
-      <h1 className="app__h3">Welcome to Nowgram (Clone Instagram )</h1>
+      <h1 className="app__h3">Welcome to Nowgram (Clone Instagram )</h1 >
       <div className="app__posts">
         <div className="app__postsLeft">
           {posts.map(({ id, post }) => (
